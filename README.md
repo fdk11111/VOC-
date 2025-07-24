@@ -69,16 +69,4 @@
 
 ## 6. 代码仓库
 **GitHub**: [https://github.com/yourname/voc-detection](替换为仓库链接)  
-**训练命令**:
-```bash
-# Mask R-CNN
-python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_voc.py \
-    --cfg-options data.samples_per_gpu=4 \
-        optimizer.lr=0.0025 \
-        runner.max_epochs=12
 
-# Sparse R-CNN
-python tools/train.py configs/sparse_rcnn/sparse_rcnn_r50_fpn_1x_voc.py \
-    --cfg-options data.samples_per_gpu=4 \
-        optimizer.lr=0.005 \
-        runner.max_epochs=12
